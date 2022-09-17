@@ -9,7 +9,7 @@ import com.coffeepoweredcrew.factorymethod.message.Message;
 public class JSONMessageCreator extends MessageCreator {
 
     @Override
-    public Message createMessage() {
+    protected JsonMessageMessage createMessage() {
         return new JsonMessage();
     }
 }
